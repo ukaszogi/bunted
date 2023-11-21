@@ -1,3 +1,9 @@
+# Hola hola bracie, kolejne repo w przeciągu paru dni co jest co do za grindset
+
+No tym razem nie jest tak cudownie, bo to z poradnika, pomysł mi się spodobał, postaram się go rozszerzyć o jakieś dodatkowe funkcjonalności.
+
+## Kojeny projekt niepotrzebny światu
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
