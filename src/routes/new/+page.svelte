@@ -1,9 +1,14 @@
 <script lang="ts">
-  import {noteStore} from '$lib/stores.ts'
+  import { noteStore } from '$lib/stores.ts'
   import { InputChip, getToastStore } from '@skeletonlabs/skeleton';
   import type { ToastSetting } from '@skeletonlabs/skeleton'
+  import { goto } from '$app/navigation';
 
   const toastStore = getToastStore()
+  const t: ToastSetting = {
+    message: "Note created successfully",
+    background: "variant-ghost-success"
+  }
 
   let tags: string[] = [];
   let content: string;
@@ -16,6 +21,8 @@
     }]);
     content = "";
     tags = [];
+    toastStore.trigger(t);
+    goto("/");
   }
 </script>
 

@@ -10,9 +10,11 @@
   import { AppShell, AppBar, Avatar } from '@skeletonlabs/skeleton';
   import Navigation from '$lib/components/Navigation.svelte'
   import { Drawer, getDrawerStore } from '@skeletonlabs/skeleton';
+  import { Toast } from '@skeletonlabs/skeleton';
+  import { Modal, getModalStore } from '@skeletonlabs/skeleton';
 
   // Types
-  import type { DrawerSettings, DrawerStore } from '@skeletonlabs/skeleton';
+  import type { DrawerStore, ToastStore } from '@skeletonlabs/skeleton';
   
   // Zusatz, Sonstige
   import { initializeStores } from '@skeletonlabs/skeleton';
@@ -25,6 +27,10 @@
 <Drawer>
   <Navigation />
 </Drawer>
+
+<Toast position="tr"/>
+
+<Modal />
 
 <AppShell slotSidebarLeft="w-0 md:w-60 bg-surface-500/10">
 	<svelte:fragment slot="header">
